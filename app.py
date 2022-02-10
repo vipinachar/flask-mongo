@@ -4,7 +4,7 @@ from flask import Flask, jsonify, make_response, request
 from bson import json_util 
 from bson.objectid import ObjectId
 
-cluster = MongoClient("mongodb+srv://admin:admin@cluster0.ana3b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+cluster = MongoClient("mongodb+srv://admin:<password>@cluster0.ana3b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 db = cluster["test"]
 collection = db["test"]
